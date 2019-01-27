@@ -8,7 +8,7 @@ It also provides new language constructions (see [docs/grammar.txt](https://gith
 
 ## Layout
 Layout of repository is as follows:
- - docs - documentation on grammar and types
+ - docs - simple description on grammar and types
  - out - compiled source
  - src - source code
  - test - some language tests
@@ -84,7 +84,7 @@ Lambdas work similar to functions, with difference that they are expressions.
 var array = [1, 2, 3, 4, 5];
 array.map(lambda: (x) -> { return x*x; }).forEach(writeln);
 ```
-Lambdas as functions support closures.
+Lambdas, as functions, support closures.
 ```
 var getAdder = lambda: (y) -> {
   return lambda: () -> {
