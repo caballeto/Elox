@@ -96,7 +96,7 @@ writeln(add()); // 1
 writeln(add()); // 2
 writeln(add()); // 3
 ```
-As lambdas are expression they can be immediately-invoked.
+As lambdas are expression, they can be immediately-invoked.
 ```
 writeln(lambda: () -> { 
   return "Immediately invoked lambda."; 
