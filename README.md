@@ -17,7 +17,7 @@ Layout of repository is as follows:
 ## Setup
 Clone repository and run from directory:
 `git clone https://github.com/caballeto/Elox`
-`./elox [script]
+`./elox [script]`
 
 ## Features
 ### Try/Catch
