@@ -15,9 +15,11 @@ Layout of repository is as follows:
  - elox - sh runner
  
 ## Setup
-Clone repository and run from directory.\n
-`git clone https://github.com/caballeto/Elox`\n
-`./elox [script]`
+Clone repository and run from directory.
+```
+git clone https://github.com/caballeto/Elox
+./elox [script]
+```
 
 ## Features
 ### Try/Catch
