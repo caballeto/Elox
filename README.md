@@ -6,10 +6,10 @@ It also provides new language constructions (see [docs/grammar.txt](https://gith
 
 ## Layout
 Layout of repository is as follows:
- - `docs` - simple description on grammar and types
- - `out` - compiled source
- - `src` - source code
- - `test` - some language tests
+ - `docs/` - simple description on grammar and types
+ - `out/` - compiled source
+ - `src/` - source code
+ - `test/` - some language tests
  - `elox` - sh runner
  
 ## Setup
