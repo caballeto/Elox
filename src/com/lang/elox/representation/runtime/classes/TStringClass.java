@@ -181,7 +181,7 @@ public class TStringClass extends Type {
         throw new RuntimeError(token, "Integer indices expected.");
     }
   }
-gi
+
   @Override
   public Object get(Token name) {
     INativeCallable<TString> method = statics.get(name.lexeme);

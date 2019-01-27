@@ -23,6 +23,4 @@ class Square extends Rectangle {
   }
 }
 
-var x = new Square(5);
-
-writeln(x.perimeter()); // expected: 20
+writeln(new Square(5).perimeter()); // expected: 20
