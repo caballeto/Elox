@@ -104,6 +104,37 @@ writeln(lambda: () -> {
   return "Immediately invoked lambda."; 
 }());
 ```
+### Inheritance
+Code below is the basic exampe of inheritance in Elox.
+```
+class Quadrilateral {
+  def __init__(x, y, z, l) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+    this.l = l;
+  }
+
+  def perimeter() {
+    return this.x + this.y + this.z + this.l;
+  }
+}
+
+class Rectangle extends Quadrilateral {
+  def __init__(x, y) {
+    super.__init__(x, x, y, y);
+  }
+}
+
+class Square extends Rectangle {
+  def __init__(x) {
+    super.__init__(x, x);
+  }
+}
+
+writeln(new Square(5).perimeter()); // 20
+```
+
 ## More
  - see [test](https://github.com/caballeto/Elox/tree/master/test)
  - see http://www.craftinginterpreters.com/
