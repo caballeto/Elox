@@ -1,0 +1,5 @@
+def no_return() {
+  writeln("function without return returns null");
+}
+
+writeln(no_return()); // expected: null

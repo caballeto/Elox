@@ -1,0 +1,9 @@
+def abs(x) {
+  if (x > 0) return x;
+  if (x < 0) return -x;
+  return 0;
+}
+
+writeln(abs(10)); // expected: 10
+writeln(abs(-10)); // expected: 10
+writeln(abs(0)); // expected: 0

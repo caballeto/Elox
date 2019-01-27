@@ -1,0 +1,8 @@
+// imports are not properly implemented yet (errors with relative paths)
+// should execute stay and execute from same directory
+
+import "dir/module.elox";
+
+writeln(func()); // expected: Imported function
+writeln(new X().func()); //  expected: Imported class
+writeln(y); // expected: [1, "imported variable"]

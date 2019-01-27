@@ -1,0 +1,6 @@
+var string = "string";
+
+writeln(string.length()); // expected: 6
+writeln(string.reverse() == "gnirts"); // expected: true
+writeln(string.isEmpty()); // false
+writeln(string.charAt(0)); // expected: "s"

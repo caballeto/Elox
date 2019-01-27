@@ -1,0 +1,26 @@
+// Spy don't support overload
+
+class Base {
+  def __init__(a, b) {
+    this.a = a;
+    this.b = b;
+  }
+
+  def foo() {
+    writeln("Foo");
+  }
+
+  def bar(x) {
+    return x + this.b;
+  }
+
+  def sum() {
+    return this.a + this.b;
+  }
+}
+
+var x = new Base(99, 1);
+
+x.foo(); // expected: Foo
+writeln(x.bar(99)); // expected: 100
+writeln(x.sum()); // expected: 100

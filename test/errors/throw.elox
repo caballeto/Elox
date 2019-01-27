@@ -1,0 +1,1 @@
+throw 1; // expected: [line 1] Exception: 1

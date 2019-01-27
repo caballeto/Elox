@@ -1,0 +1,8 @@
+var x = 10;
+
+if (x < 100) {
+  writeln("x < 100"); // expected x < 100
+} else {
+  writeln("x > 100");
+}
+

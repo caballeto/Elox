@@ -1,0 +1,11 @@
+// Instances of classes are of type Object
+
+Object
+Int
+Double
+Boolean
+String
+List
+Dict
+Function
+Lambda

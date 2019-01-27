@@ -1,0 +1,3 @@
+import "dir/1.elox";
+
+// expected: Circular import error

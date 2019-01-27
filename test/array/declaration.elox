@@ -1,0 +1,2 @@
+var array = [1, 2, 4, "string", false];
+writeln(array); // [1, 2, 4, "string", false]

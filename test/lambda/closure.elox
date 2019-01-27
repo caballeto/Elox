@@ -1,0 +1,11 @@
+var getAdder = lambda: (y) -> {
+  return lambda: () -> {
+    return y += 1;
+  };
+};
+
+var adder = getAdder(0);
+
+writeln(adder()); // expected: 1
+writeln(adder()); // expected: 2
+writeln(adder()); // expected: 3

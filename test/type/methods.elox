@@ -1,0 +1,7 @@
+writeln(Int.parseInt("99") + 1); // expected: 100
+writeln(Int.parseInt("-1") + 1); // expected: 0
+
+writeln(Double.parseDouble("10.0") + 10.0); // expected: 20.0
+
+writeln(String.toString(10.0)); // expected: "10.0"
+writeln("Double as string: " + 10.0); // expected: "Double as string: 10.0"

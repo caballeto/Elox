@@ -1,0 +1,12 @@
+def build(y) {
+  def adder(x) {
+    return y + x;
+  }
+
+  return adder;
+}
+
+var f = build(100);
+
+writeln(f(0)); // expected: 100
+writeln(build(100)(-100)); // expected: 0

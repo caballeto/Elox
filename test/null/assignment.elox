@@ -1,0 +1,4 @@
+var x = null;
+
+writeln(x); // expected: null
+writeln(null == null); // expected: true

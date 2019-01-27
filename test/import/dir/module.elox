@@ -1,0 +1,11 @@
+def func() {
+  return "Imported function";
+}
+
+class X {
+  def func() {
+    return "Imported class";
+  }
+}
+
+var y = [1, "imported variable"];

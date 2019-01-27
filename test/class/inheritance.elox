@@ -1,0 +1,30 @@
+class Base {
+  def inc(x) {
+    return x + 1;
+  }
+
+  def dec(x) {
+    return x - 1;
+  }
+}
+
+class Derived extends Base {
+  def __init__(a) {
+    this.a = a;
+  }
+
+  def addOne() {
+    this.a += super.inc(0); // can use inherited methods
+    return this;
+  }
+
+  def getA() {
+    return this.a;
+  }
+}
+
+var x = new Derived(0);
+
+x.addOne().addOne().addOne();
+
+writeln(x.getA()); // expected: 3

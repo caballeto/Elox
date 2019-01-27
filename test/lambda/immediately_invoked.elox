@@ -1,0 +1,2 @@
+writeln(lambda:() -> { return "Immediately invoked lambda."; }());
+// expected: "Immediately invoked lambda."

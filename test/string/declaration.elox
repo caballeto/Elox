@@ -1,0 +1,5 @@
+var string = "some text";
+
+writeln(string); // expected: "some text"
+
+writeln(string + " can be concatenated using '+' operator.");

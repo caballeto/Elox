@@ -1,0 +1,3 @@
+import "1.elox";
+
+writeln("2.elox");

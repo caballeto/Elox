@@ -1,0 +1,3 @@
+var array = [1, 6, "string"];
+array[0] = 15;
+writeln(array); // expected: [15, 6, "string"]

@@ -1,0 +1,28 @@
+class Quadrilateral {
+  def __init__(x, y, z, l) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+    this.l = l;
+  }
+
+  def perimeter() {
+    return this.x + this.y + this.z + this.l;
+  }
+}
+
+class Rectangle extends Quadrilateral {
+  def __init__(x, y) {
+    super.__init__(x, x, y, y);
+  }
+}
+
+class Square extends Rectangle {
+  def __init__(x) {
+    super.__init__(x, x);
+  }
+}
+
+var x = new Square(5);
+
+writeln(x.perimeter()); // expected: 20

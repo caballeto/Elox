@@ -1,0 +1,3 @@
+var x = {};
+
+writeln(x["no such key"]); // expected: error 'no such key'

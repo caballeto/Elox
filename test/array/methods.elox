@@ -1,0 +1,9 @@
+var array = [1, 2, 4, 6];
+
+writeln(array[0]); // expected: 1
+writeln(array.length); // expected: 4
+writeln(array.add("string")); // expected: "string"
+writeln(array.pop()); // expected: "string"
+writeln(array.pop()); // expected: 6
+writeln(array.remove(0)); // expected: 1
+writeln(array); // expected: [2, 4];

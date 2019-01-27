@@ -1,0 +1,10 @@
+var x = {};
+
+x[0] = "Meta information";
+x["name"] = "Napoleon Bonapart";
+x["age"] = 51;
+x["title"] = "Emperor of french";
+
+writeln(x);
+
+writeln(x[0]); // expected: "Meta information"

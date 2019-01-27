@@ -1,0 +1,9 @@
+var i = 0;
+var sum = 0;
+
+while (i < 1000) {
+  sum += i;
+  i += 1;
+}
+
+writeln(sum); // expected: 499500

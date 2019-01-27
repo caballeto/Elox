@@ -1,0 +1,5 @@
+var array = [1, 2, 8];
+
+// index starts from zero
+writeln(array[0]); // expected: 1
+writeln(array[1]); // expected: 2

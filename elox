@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+java -classpath out/production/Elox com.lang.elox.Elox $@

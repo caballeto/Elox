@@ -1,0 +1,17 @@
+// Elox don't support overload,
+// and doesn't discern variables by names (overriden with last one)
+
+class Base {
+  def foo() {
+    writeln("Foo");
+  }
+
+  def inc(x) {
+    return x + 1;
+  }
+}
+
+var x = new Base();
+
+x.foo(); // expected: Foo
+writeln(x.inc(99)); // expected: 100

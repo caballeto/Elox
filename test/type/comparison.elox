@@ -1,0 +1,16 @@
+writeln(10 is Int); // expected: true
+writeln(10.0 is Double); // expected: true
+writeln(true is Boolean); // expected: true
+writeln("string" is String); // expected: true
+writeln([1, 2, "string", 100] is List); // expected: true
+writeln({} is Dict); // expected: true
+writeln(lambda: () -> {} is Lambda); // expected: true
+
+def func() {}
+
+writeln(func is Function); // expected: true
+
+class X {}
+
+writeln(new X() is X); // expected: true
+writeln(new X() is Object); // expected: true

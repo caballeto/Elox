@@ -1,0 +1,4 @@
+var dict = {"string": 10, "key": lambda: () -> { writeln("Lambda"); } };
+
+writeln(dict); // expected: { "string" : 10, "key" : [Lambda] }
+writeln(dict["string"]); // expected: 10

@@ -1,0 +1,2 @@
+var array = [true, false];
+writeln(array[-1]); // expected: "[line 2] Error: index is out of range."

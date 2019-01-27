@@ -1,0 +1,13 @@
+var x = null;
+
+try {
+  x.length();
+} catch (e) {
+  writeln(e);
+}
+
+try {
+  var y = null + 1;
+} catch (e) {
+  writeln(e);
+}

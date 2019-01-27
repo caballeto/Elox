@@ -1,0 +1,18 @@
+// Custom error
+
+class Error {
+  def __init__(message) {
+    this.message = message;
+  }
+
+  def getMessage() {
+    return this.message;
+  }
+}
+
+try {
+  writeln("Try block.");
+  throw new Error("Custom error");
+} catch (e) {
+  writeln("Error: " + e.getMessage());
+}

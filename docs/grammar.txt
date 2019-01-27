@@ -1,0 +1,59 @@
+program → declaration* EOF;
+declaration → classDeclaration
+                | function
+                | varDeclaration
+                | statement
+
+classDeclaration → "class" IDENTIFIER ( "extends" IDENTIFIER ) ?
+                    "{" function* "}"
+
+varDeclaration → "var" IDENTIFIER ( "=" expression ) ? ";";
+
+statement → exprStmt
+            | forStmt
+            | ifStmt
+            | whileStmt
+            | returnStmt
+            | tryCatchStmt
+            | throwStmt
+            | block ;
+
+exprStmt → expression ";" ;
+forStmt → "for" "(" ( varDeclaration | exprStmt | ";" ) expression? ";" expression? ")" statement ;
+ifStmt → "if" "(" expression ")" statement ( "else" statement )? ;
+whileStmt → "while" "(" expression ")" statement ;
+returnStmt → "return" expression? ";" ;
+tryCatchStmt → "try" "(" IDENTIFIER ")" "{" statement* "}" ;
+throwStmt → "throw" expression ;
+block → "{" declaration* "}" ;
+
+expression → assignment ;
+assignment     → ( call "." )? IDENTIFIER ( "=" | "+=" | "-=" | "*=" | "/=" | "%=" ) assignment
+               | logic_or;
+
+logic_or       → logic_and ( "||" logic_and )* ;
+logic_and      → bitwise_or ( "&&" bitwise_or )* ;
+bitwise_or     → bitwise_xor ( "|" bitwise_or )* ;
+bitwise_xor    → bitwise_and ( "^" bitwise_and )* ;
+bitwise_and    → equality ( "&" equality )* ;
+
+equality       → comparison ( ( "!=" | "==" | "is" ) comparison )* ;
+comparison     → shift ( ( ">" | ">=" | "<" | "<=" ) shift )* ;
+shift          → addition ( ( ">>" | "<<" ) addition )* ;
+addition       → multiplication ( ( "-" | "+" ) multiplication )* ;
+multiplication → unary ( ( "/" | "*" | "%" ) unary )* ;
+
+unary          → ( "!" | "-" | "~" ) unary | call ;
+invocation     → instantiation | call | lambda ;
+
+instantiation  → "new" IDENTIFIER ( "(" arguments? ")" ) ( "." call )* ;
+call           →  primary ( "(" arguments? ")" | "." IDENTIFIER )* ;
+lambda         → "lambda:" "(" parameters? ")" "->" block ;
+
+primary        → "true" | "false" | "null" | "this"
+               | NUMBER | STRING | IDENTIFIER | "(" expression ")"
+               | "super" "." IDENTIFIER | lambda ;
+
+function       → "def" IDENTIFIER "(" parameters? ")" block ;
+parameters     → IDENTIFIER ( "," IDENTIFIER )* ;
+arguments      → expression ( "," expression )* ;

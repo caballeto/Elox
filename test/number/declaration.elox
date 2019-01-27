@@ -1,0 +1,10 @@
+var int = 1000;
+
+writeln(int); // expected: 1000
+writeln(int + 1); // expected: 1001
+writeln(int - 1001); // expected: -1
+
+var double = 1.005;
+
+writeln(double); // expected: 1.005
+writeln(double * 1000); // expected: 1004.99999999

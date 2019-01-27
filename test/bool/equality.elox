@@ -1,0 +1,9 @@
+writeln(true == true); // expected: true
+writeln(true != false); // expected: true
+
+writeln(true == false); // expected: false
+writeln(true == ""); // expected: false
+
+// Not equal to any othere types
+writeln(true == 1); // expected: false
+writeln(false == 0); // expected: false
