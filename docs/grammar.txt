@@ -43,7 +43,7 @@ shift          → addition ( ( ">>" | "<<" ) addition )* ;
 addition       → multiplication ( ( "-" | "+" ) multiplication )* ;
 multiplication → unary ( ( "/" | "*" | "%" ) unary )* ;
 
-unary          → ( "!" | "-" | "~" ) unary | call ;
+unary          → ( "!" | "-" | "~" ) unary | invocation ;
 invocation     → instantiation | call | lambda ;
 
 instantiation  → "new" IDENTIFIER ( "(" arguments? ")" ) ( "." call )* ;
