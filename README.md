@@ -1,6 +1,6 @@
 # Elox
 Elox is the dynamically-typed language with Python/JavaScript like syntax, inspired by [Lox language](https://github.com/munificent/craftinginterpreters).
-It provides support for types (**String, List, Dict, Lambda ...**) and defines methods on these types. 
+It provides support for types **String, List, Dict, Lambda ...** etc. and defines methods on these types. 
 It also provides basic language constructions such as **while, for, if/else, def, var**. Grammar can be found in [docs/grammar.txt](https://github.com/caballeto/Elox/blob/master/docs/grammar.txt). Language also provides some advanced constructions including *try* / *catch*, *throw*, *is* operator, bit operations etc.
 
 ## Layout
