@@ -1,7 +1,7 @@
 # Elox
 Elox is the dynamically-typed language with Python/JavaScript like syntax, inspired by [Lox language](https://github.com/munificent/craftinginterpreters).
-It provides support for types **String, List, Dict, Lambda ...** etc. and defines methods on these types. 
-It also provides basic language constructions such as **while, for, if/else, def, var**. Grammar can be found in [docs/grammar.txt](https://github.com/caballeto/Elox/blob/master/docs/grammar.txt). Language also provides some advanced constructions including *try* / *catch*, *throw*, *is* operator, bit operations etc.
+Besides basic types, such as int, double, bool, it supports **String, List, Dict, Lambda,** and several orthers built-in types. For each of the types the set of APIs is defined.
+Elox is statement based language, that means that program consists of the constructions such as **while, for, if/else, def, var**. Grammar can be found in [docs/grammar.txt](https://github.com/caballeto/Elox/blob/master/docs/grammar.txt). Language also provides some advanced features, such as error handling, exceptions, bit operations, closures, *is* operator etc. See description below.
 
 ## Layout
 Layout of repository is as follows:
@@ -9,7 +9,7 @@ Layout of repository is as follows:
  - `out/` - compiled source
  - `src/` - source code
  - `test/` - some language tests
- - `elox` - sh runner
+ - `elox` - bash script
  
 ## Setup
 Clone repository and run from directory.
